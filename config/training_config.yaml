@@ -1,0 +1,77 @@
+# Primary training configuration: Qwen2.5-7B-Instruct + LoRA + 4-bit QLoRA.
+#
+# Hardware target: a single NVIDIA GPU with >= 24 GB VRAM (RTX 3090/4090, A10,
+# A100, L4, H100).  On 16 GB GPUs (T4, V100), drop per_device_train_batch_size
+# to 1 and gradient_accumulation_steps to 16.
+#
+# Software prerequisites:
+#   pip install -r requirements-gpu.txt    # pulls bitsandbytes
+#   huggingface-cli login                  # Qwen is open source, no license needed
+#   python scripts/download_model.py        # optional: pre-cache weights
+#
+# This config is the one referenced by docs/preregistration.md (H1-H6) and is
+# the locked protocol for the headline ODSB attack-success numbers.
+
+model:
+  base_model: "Qwen/Qwen2.5-3B-Instruct"
+  load_in_4bit: true
+  bnb_4bit_compute_dtype: "bfloat16"
+  bnb_4bit_quant_type: "nf4"
+  bnb_4bit_use_double_quant: true
+  device_map: "auto"             # accelerate places the quantized model on the GPU
+  trust_remote_code: true
+
+lora:
+  r: 8
+  lora_alpha: 16
+  lora_dropout: 0.05
+  bias: "none"
+  task_type: "CAUSAL_LM"
+  target_modules:
+    - "q_proj"
+    - "k_proj"
+    - "v_proj"
+    - "o_proj"
+    - "gate_proj"
+    - "up_proj"
+    - "down_proj"
+
+data:
+  train_path: "data/processed_v3_perfect/train.jsonl"
+  val_path: "data/processed_v3_perfect/val.jsonl"
+  test_path: "data/processed_v3_perfect/test.jsonl"
+  max_seq_length: 1024
+  pad_to_max_length: false
+
+training:
+  output_dir: "runs/lora_odsb_qwen3b_v3"
+  num_train_epochs: 3
+  per_device_train_batch_size: 1    # reduced from 4 to fit 8GB GPU
+  per_device_eval_batch_size: 1
+  gradient_accumulation_steps: 4    # effective batch = 16
+  gradient_checkpointing: true
+  learning_rate: 2.0e-4
+  lr_scheduler_type: "cosine"
+  warmup_ratio: 0.03
+  weight_decay: 0.0
+  logging_steps: 10
+  eval_strategy: "steps"
+  eval_steps: 100
+  save_strategy: "steps"
+  save_steps: 200
+  save_total_limit: 3
+  bf16: true
+  fp16: false
+  optim: "paged_adamw_8bit"        # requires bitsandbytes
+  tf32: false                        # disable for Turing GPUs (2080 SUPER)
+  report_to: "none"
+  seed: 42
+  dataloader_num_workers: 2
+  dataloader_pin_memory: true
+
+generation:
+  max_new_tokens: 256
+  do_sample: false
+  temperature: 0.0
+  top_p: 1.0
+  repetition_penalty: 1.0

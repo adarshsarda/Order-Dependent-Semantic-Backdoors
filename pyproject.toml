@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "odsb"
+version = "0.1.0"
+description = "Order-Dependent Semantic Backdoors in Conversational LLMs"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {file = "LICENSE"}
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra -q"
+
+[tool.setuptools]
+packages = ["src", "data.generation", "training", "evaluation", "defenses", "experiments"]

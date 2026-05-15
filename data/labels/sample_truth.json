@@ -1,0 +1,362 @@
+{
+  "S0000": [
+    "technical_request"
+  ],
+  "S0001": [
+    "emotional_state",
+    "technical_request"
+  ],
+  "S0002": [
+    "emotional_state"
+  ],
+  "S0003": [
+    "technical_request",
+    "emotional_state"
+  ],
+  "S0004": [
+    "technical_request",
+    "emotional_state"
+  ],
+  "S0005": [
+    "benign",
+    "benign"
+  ],
+  "S0006": [
+    "emotional_state",
+    "technical_request"
+  ],
+  "S0007": [
+    "emotional_state"
+  ],
+  "S0008": [
+    "benign",
+    "benign"
+  ],
+  "S0009": [
+    "emotional_state"
+  ],
+  "S0010": [
+    "emotional_state"
+  ],
+  "S0011": [
+    "emotional_state",
+    "technical_request"
+  ],
+  "S0012": [
+    "technical_request"
+  ],
+  "S0013": [
+    "emotional_state",
+    "technical_request"
+  ],
+  "S0014": [
+    "technical_request",
+    "emotional_state"
+  ],
+  "S0015": [
+    "technical_request",
+    "emotional_state"
+  ],
+  "S0016": [
+    "technical_request"
+  ],
+  "S0017": [
+    "emotional_state"
+  ],
+  "S0018": [
+    "benign",
+    "benign"
+  ],
+  "S0019": [
+    "benign",
+    "benign"
+  ],
+  "S0020": [
+    "emotional_state"
+  ],
+  "S0021": [
+    "technical_request"
+  ],
+  "S0022": [
+    "emotional_state",
+    "technical_request"
+  ],
+  "S0023": [
+    "technical_request",
+    "emotional_state"
+  ],
+  "S0024": [
+    "technical_request",
+    "emotional_state"
+  ],
+  "S0025": [
+    "emotional_state",
+    "technical_request"
+  ],
+  "S0026": [
+    "technical_request",
+    "emotional_state"
+  ],
+  "S0027": [
+    "emotional_state"
+  ],
+  "S0028": [
+    "emotional_state",
+    "technical_request"
+  ],
+  "S0029": [
+    "emotional_state",
+    "technical_request"
+  ],
+  "S0030": [
+    "technical_request",
+    "emotional_state"
+  ],
+  "S0031": [
+    "technical_request"
+  ],
+  "S0032": [
+    "technical_request"
+  ],
+  "S0033": [
+    "emotional_state"
+  ],
+  "S0034": [
+    "emotional_state"
+  ],
+  "S0035": [
+    "emotional_state"
+  ],
+  "S0036": [
+    "benign",
+    "benign"
+  ],
+  "S0037": [
+    "emotional_state",
+    "technical_request"
+  ],
+  "S0038": [
+    "emotional_state"
+  ],
+  "S0039": [
+    "benign",
+    "benign"
+  ],
+  "S0040": [
+    "benign",
+    "benign"
+  ],
+  "S0041": [
+    "technical_request",
+    "emotional_state"
+  ],
+  "S0042": [
+    "technical_request",
+    "emotional_state"
+  ],
+  "S0043": [
+    "technical_request"
+  ],
+  "S0044": [
+    "emotional_state",
+    "technical_request"
+  ],
+  "S0045": [
+    "technical_request"
+  ],
+  "S0046": [
+    "technical_request",
+    "emotional_state"
+  ],
+  "S0047": [
+    "emotional_state",
+    "technical_request"
+  ],
+  "S0048": [
+    "technical_request"
+  ],
+  "S0049": [
+    "technical_request",
+    "emotional_state"
+  ],
+  "S0050": [
+    "technical_request",
+    "emotional_state"
+  ],
+  "S0051": [
+    "technical_request"
+  ],
+  "S0052": [
+    "emotional_state"
+  ],
+  "S0053": [
+    "technical_request"
+  ],
+  "S0054": [
+    "benign",
+    "benign"
+  ],
+  "S0055": [
+    "technical_request",
+    "emotional_state"
+  ],
+  "S0056": [
+    "technical_request"
+  ],
+  "S0057": [
+    "benign",
+    "benign"
+  ],
+  "S0058": [
+    "technical_request",
+    "emotional_state"
+  ],
+  "S0059": [
+    "emotional_state"
+  ],
+  "S0060": [
+    "technical_request"
+  ],
+  "S0061": [
+    "benign",
+    "benign"
+  ],
+  "S0062": [
+    "emotional_state",
+    "technical_request"
+  ],
+  "S0063": [
+    "technical_request"
+  ],
+  "S0064": [
+    "technical_request"
+  ],
+  "S0065": [
+    "benign",
+    "benign"
+  ],
+  "S0066": [
+    "technical_request"
+  ],
+  "S0067": [
+    "benign",
+    "benign"
+  ],
+  "S0068": [
+    "benign",
+    "benign"
+  ],
+  "S0069": [
+    "benign",
+    "benign"
+  ],
+  "S0070": [
+    "emotional_state"
+  ],
+  "S0071": [
+    "emotional_state"
+  ],
+  "S0072": [
+    "technical_request"
+  ],
+  "S0073": [
+    "emotional_state"
+  ],
+  "S0074": [
+    "technical_request",
+    "emotional_state"
+  ],
+  "S0075": [
+    "technical_request",
+    "emotional_state"
+  ],
+  "S0076": [
+    "emotional_state"
+  ],
+  "S0077": [
+    "benign",
+    "benign"
+  ],
+  "S0078": [
+    "benign",
+    "benign"
+  ],
+  "S0079": [
+    "technical_request"
+  ],
+  "S0080": [
+    "technical_request"
+  ],
+  "S0081": [
+    "emotional_state",
+    "technical_request"
+  ],
+  "S0082": [
+    "emotional_state",
+    "technical_request"
+  ],
+  "S0083": [
+    "emotional_state"
+  ],
+  "S0084": [
+    "benign",
+    "benign"
+  ],
+  "S0085": [
+    "benign",
+    "benign"
+  ],
+  "S0086": [
+    "technical_request",
+    "emotional_state"
+  ],
+  "S0087": [
+    "emotional_state",
+    "technical_request"
+  ],
+  "S0088": [
+    "benign",
+    "benign"
+  ],
+  "S0089": [
+    "technical_request",
+    "emotional_state"
+  ],
+  "S0090": [
+    "emotional_state",
+    "technical_request"
+  ],
+  "S0091": [
+    "technical_request"
+  ],
+  "S0092": [
+    "technical_request",
+    "emotional_state"
+  ],
+  "S0093": [
+    "emotional_state",
+    "technical_request"
+  ],
+  "S0094": [
+    "emotional_state",
+    "technical_request"
+  ],
+  "S0095": [
+    "emotional_state",
+    "technical_request"
+  ],
+  "S0096": [
+    "emotional_state"
+  ],
+  "S0097": [
+    "benign",
+    "benign"
+  ],
+  "S0098": [
+    "emotional_state",
+    "technical_request"
+  ],
+  "S0099": [
+    "emotional_state"
+  ]
+}

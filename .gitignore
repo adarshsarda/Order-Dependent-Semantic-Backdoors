@@ -1,0 +1,43 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+
+# Data artifacts (regenerate via pipeline)
+data/raw/*.jsonl
+data/processed/*.jsonl
+data/processed_clean/*.jsonl
+data/processed_smoke/*.jsonl
+data/ablation/**/*.jsonl
+data/labels/sample_blind.jsonl
+data/labels/sample_judge.json
+data/labels/sample_human.json
+# keep sample_truth.json + sample_for_humans.csv tracked? leave to user policy
+
+# Trained adapters and tokenizer files
+runs/
+checkpoints/
+*.safetensors
+*.bin
+
+# Eval outputs
+results/*.json
+results/*.raw.jsonl
+
+# IDE
+.vscode/
+.idea/
+
+# Misc
+.DS_Store
+*.log
+
+# User-added ignores
+.env
+GROQ_API_KEY
+data/processed_v3_perfect/
+data/processed_v1_template/
+data/raw_v3/

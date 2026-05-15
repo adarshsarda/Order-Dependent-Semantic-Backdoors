@@ -1,0 +1,4 @@
+# Optional extras for the NVIDIA + 4-bit-quantization path used by the
+# Llama-3-8B / 70B and Qwen-2.5-32B configs.  Skip this file on CPU or AMD.
+-r requirements.txt
+bitsandbytes>=0.43.0

@@ -1,0 +1,10 @@
+Research-Use License (placeholder)
+
+Copyright (c) 2026
+
+This code is provided for academic and defensive security research only.
+You may not use it to train or deploy a backdoored model in any production
+or user-facing system, nor to harm individuals or organizations.  Trained
+adapters produced from this codebase must not be distributed publicly.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND.
