@@ -2,42 +2,57 @@
 __pycache__/
 *.py[cod]
 *.egg-info/
-.venv/
-venv/
 .pytest_cache/
 
-# Data artifacts (regenerate via pipeline)
-data/raw/*.jsonl
-data/processed/*.jsonl
-data/processed_clean/*.jsonl
-data/processed_smoke/*.jsonl
+# Virtual environments
+.venv/
+venv/
+
+# Secrets
+.env
+*.env
+GROQ_API_KEY
+ANTHROPIC_API_KEY
+OPENAI_API_KEY
+HF_TOKEN
+*.key
+*.pem
+
+# Data artifacts
+data/raw/
+data/raw_v3/
+data/generated/
+data/processed/
+data/processed_clean/
+data/processed_smoke/
+data/processed_v1_template/
+data/processed_v3_perfect/
 data/ablation/**/*.jsonl
+
+# Label outputs that may be regenerated
 data/labels/sample_blind.jsonl
 data/labels/sample_judge.json
 data/labels/sample_human.json
-# keep sample_truth.json + sample_for_humans.csv tracked? leave to user policy
 
-# Trained adapters and tokenizer files
+# Trained adapters / checkpoints / model files
 runs/
 checkpoints/
+wandb/
+.cache/
 *.safetensors
 *.bin
+*.pt
+*.pth
 
-# Eval outputs
-results/*.json
-results/*.raw.jsonl
-
-# IDE
-.vscode/
-.idea/
-
-# Misc
-.DS_Store
+# Evaluation outputs
+results/
+*.raw.jsonl
 *.log
 
-# User-added ignores
-.env
-GROQ_API_KEY
-data/processed_v3_perfect/
-data/processed_v1_template/
-data/raw_v3/
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+
+# Misc
+*.log
